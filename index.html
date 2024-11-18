@@ -124,15 +124,41 @@
         /* Contact Information Styles */
         .contact-info {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
             margin-top: 20px;
-            background: #f4f4f4;
             padding: 20px;
+            background: #f4f4f4;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
         }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+            padding: 10px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item a {
+            text-decoration: none;
+            color: #007acc;
+            font-weight: bold;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            color: #007acc;
+        }
+
 
         /* Footer Styles */
         footer {
@@ -177,11 +203,11 @@
                 <a href="tel:+212701219103">+212 701-219103</a>
             </div>
             <div class="contact-item">
-                <span class="icon">🔗</span><b>Linkdein: </b>
+                <span class="icon">🔗</span><b>LinkedIn: </b>
                 <a href="https://linkedin.com/in/abdeljalil-ounaceur-33a657244" target="_blank">abdeljalil-ounaceur</a>
             </div>
             <div class="contact-item">
-                <span class="icon">🐙</span><b>Github: </b>
+                <span class="icon">🐙</span><b>GitHub: </b>
                 <a href="https://github.com/Abdeljalil-Ounaceur" target="_blank">Abdeljalil-Ounaceur</a>
             </div>
         </div>
